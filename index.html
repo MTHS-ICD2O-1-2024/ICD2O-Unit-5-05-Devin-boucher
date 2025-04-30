@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Museum prices, in JavaScript" />
+  <meta name="description" content="Type of Triangle, in JavaScript" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Devin Boucher" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="manifest" href="site.webmanifest" />
-  <title>Museum prices, in JavaScript</title>
+  <title>Type of Triangle, in JavaScript</title>
 </head>
 
 <body>
@@ -24,38 +24,35 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Museum prices, in JavaScript</span>
+        <span class="mdl-layout-title">Type of Triangle, in JavaScript</span>
       </div>
     </header>
     <main class="mdl-layout__content">
+      <div class="right-image">
+        <img src="./images/image.png" alt="triangle image" />
+      </div>
       <div class="page-content">
-        <h4>How many years old are you?</h4>
+        <h4>Input lengths of each side</h4>
         <br />
         <form>
-          <!-- Inputs for guess -->
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="age" />
-            <label class="mdl-textfield__label" for="age">Age</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
+            <input class="mdl-textfield__input" type="number" id="sideA" />
+            <label class="mdl-textfield__label" for="sideA">Side A (cm)</label>
           </div>
-        <h4>What day of the week is it?</h4>
+          <br />
           <div class="mdl-textfield mdl-js-textfield">
-            <select class="mdl-textfield__input" id="day">
-              <option value="">Select a Day</option>
-              <option value="Monday">Monday</option>
-              <option value="Tuesday">Tuesday</option>
-              <option value="Wednesday">Wednesday</option>
-              <option value="Thursday">Thursday</option>
-              <option value="Friday">Friday</option>
-              <option value="Saturday">Saturday</option>
-              <option value="Sunday">Sunday</option>
-            </select>
-            <label class="mdl-textfield__label" for="day"></label>
+            <input class="mdl-textfield__input" type="number" id="sideB" />
+            <label class="mdl-textfield__label" for="sideB">Side B (cm)</label>
+          </div>
+          <br />
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="number" id="sideC" />
+            <label class="mdl-textfield__label" for="sideC">Side C (cm)</label>
           </div>
           <br />
           <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            type="button" onclick="checkNumber()">
-            Find Discount
+            type="button" onclick="checkTriangleType()">
+            Determine Triangle Type
           </button>
         </form>
         <div id="result"></div>
