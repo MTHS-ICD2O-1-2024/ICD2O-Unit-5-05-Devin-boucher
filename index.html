@@ -1,63 +1,77 @@
 <!DOCTYPE html>
 <!-- ICS2O-Unit3-01-HTML-MDL -->
 <html lang="en-ca">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Type of Triangle, in JavaScript" />
+    <meta name="keywords" content="mths, icd2o" />
+    <meta name="author" content="Devin Boucher" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.deep_purple-indigo.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <title>Type of Triangle, in JavaScript</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="description" content="Type of Triangle, in JavaScript" />
-  <meta name="keywords" content="mths, icd2o" />
-  <meta name="author" content="Devin Boucher" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-indigo.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="manifest" href="site.webmanifest" />
-  <title>Type of Triangle, in JavaScript</title>
-</head>
-
-<body>
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <script src="./js/script.js" defer></script>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Type of Triangle, in JavaScript</span>
-      </div>
-    </header>
-    <main class="mdl-layout__content">
-      <div class="right-image">
-        <img src="./images/image.png" alt="triangle image" />
-      </div>
-      <div class="page-content">
-        <h4>Input lengths of each side</h4>
-        <br />
-        <form>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="number" id="sideA" />
-            <label class="mdl-textfield__label" for="sideA">Side A (cm)</label>
-          </div>
+  <body>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js" defer></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Type of Triangle, in JavaScript</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="right-image">
+          <img src="./images/image.png" alt="triangle image" />
+        </div>
+        <div class="page-content">
+          <h4>Input lengths of each side</h4>
           <br />
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="number" id="sideB" />
-            <label class="mdl-textfield__label" for="sideB">Side B (cm)</label>
-          </div>
-          <br />
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="number" id="sideC" />
-            <label class="mdl-textfield__label" for="sideC">Side C (cm)</label>
-          </div>
-          <br />
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            type="button" onclick="checkTriangleType()">
-            Determine Triangle Type
-          </button>
-        </form>
-        <div id="result"></div>
-      </div>
-    </main>
-  </div>
-</body>
+          <form>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="number" id="sideA" />
+              <label class="mdl-textfield__label" for="sideA"
+                >Side A (cm)</label
+              >
+            </div>
+            <br />
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="number" id="sideB" />
+              <label class="mdl-textfield__label" for="sideB"
+                >Side B (cm)</label
+              >
+            </div>
+            <br />
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="number" id="sideC" />
+              <label class="mdl-textfield__label" for="sideC"
+                >Side C (cm)</label
+              >
+            </div>
+            <br />
+            <button
+              class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+              type="button"
+              onclick="checkTriangleType()"
+            >
+              Determine Triangle Type
+            </button>
+          </form>
+          <div id="result"></div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
