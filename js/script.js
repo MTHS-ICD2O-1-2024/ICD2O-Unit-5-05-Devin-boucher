@@ -7,7 +7,7 @@
 'use strict'
 
 // eslint-disable-next-line no-unused-vars
-function checkTriangleType() {
+function checkTriangleType () {
   const lengthA = parseFloat(document.getElementById('sideA').value)
   const lengthB = parseFloat(document.getElementById('sideB').value)
   const lengthC = parseFloat(document.getElementById('sideC').value)
